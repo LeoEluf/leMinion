@@ -1,0 +1,2 @@
+execute if data entity @s Items[{components:{"minecraft:custom_data":{leMinions:{}}}}] as @e[tag=leMinions.minion,limit=1,sort=nearest] at @s positioned ~ ~-1 ~ run function le_minions:minions/minion/ui/menu/refresh
+data remove entity @s Items[{components:{"minecraft:custom_data":{leMinions:{}}}}]

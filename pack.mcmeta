@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "pack_format": 18,
+        "supported_formats": [15, 41],
+        "description": "§7This is a §nDataPack§r§7!\n§e§l> Made By:§b Leo Eluf§r"
+    }
+}

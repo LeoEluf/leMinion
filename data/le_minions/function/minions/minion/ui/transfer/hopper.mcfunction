@@ -1,0 +1,2 @@
+execute if data block ~ ~ ~ Items[{components:{"minecraft:custom_data":{leMinions:{}}}}] at @s positioned ~ ~-1 ~ run function le_minions:minions/minion/ui/menu/refresh
+data remove block ~ ~ ~ Items[{components:{"minecraft:custom_data":{leMinions:{}}}}]
