@@ -1,4 +1,4 @@
-scoreboard players remove @s leMinions.temp 1
+scoreboard players remove @s leMinions.timer 1
 
-execute if score @s leMinions.temp matches 0 run tag @s remove leMinions.minion_setup
-execute if score @s leMinions.temp matches 0 run scoreboard players reset @s leMinions.temp
+execute if score @s leMinions.timer matches 0 run tag @s remove leMinions.minion_setup
+execute if score @s leMinions.timer matches 0 run scoreboard players operation @s leMinions.timer = @s leMinions.time_action

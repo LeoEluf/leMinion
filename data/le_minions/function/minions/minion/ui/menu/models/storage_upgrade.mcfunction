@@ -1,0 +1,1 @@
+$data modify storage le_minions:ui mask prepend value {Slot:$(slot)b, id: "minecraft:lime_stained_glass_pane", components: {"custom_data": {leMinions:{empty:1b}}, "item_name":'"§aStorage§r"', lore: ['"§7You can improve the §r"', '"§7storage of you minion §r"', '"§7by adding §bchest§7 or §bbarrel §r"']}}

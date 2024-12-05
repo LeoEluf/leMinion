@@ -2,9 +2,6 @@
 execute unless block ~ ~-1 ~ barrel[facing=up] positioned ~ ~-.5 ~ run kill @e[distance=...5,limit=1,sort=nearest,type=item,nbt={Item:{id:"minecraft:barrel"}}]
 execute unless block ~ ~-1 ~ barrel[facing=up] run setblock ~ ~-1 ~ barrel[facing=up] replace
 
-#setup
-execute if entity @s[tag=leMinions.minion_setup] run function le_minions:minions/minion/while_setup
-
 #ui
 data modify storage le_minions:ui current set from block ~ ~-1 ~ Items
 data modify storage le_minions:ui previous set from entity @s data.leMinions.previous
@@ -17,5 +14,4 @@ execute if score @s leMinions.animation matches 0 run function le_minions:minion
 execute if score @s leMinions.animation matches 1.. run function le_minions:run_cmd with entity @s data.leMinions.animation
 
 #work
-execute if score @s leMinions.break_timer >= @s leMinions.break_time run function le_minions:minions/minion/work/break/__1__
-execute if score @s leMinions.place_timer >= @s leMinions.place_time run function le_minions:minions/minion/work/place/__1__
+execute if score @s leMinions.timer matches ..0 run function le_minions:minions/minion/work/check

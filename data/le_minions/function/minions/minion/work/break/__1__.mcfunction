@@ -1,4 +1,4 @@
-execute if score #check_times leMinions.temp matches 25.. run return run function le_minions:minions/minion/work/break/finish
+execute if score #check_times leMinions.temp matches 25.. run return run function le_minions:minions/minion/work/finish
 
 function le_minions:minions/minion/work/get_coords
 
@@ -12,4 +12,4 @@ execute if score #bool leMinions.temp matches 0 run return run function le_minio
 #everything right, break
 function le_minions:minions/minion/work/break/break_block with entity @s data.leMinions
 
-function le_minions:minions/minion/work/break/finish
+function le_minions:minions/minion/work/finish
