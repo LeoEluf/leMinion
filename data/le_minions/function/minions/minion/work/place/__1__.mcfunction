@@ -1,4 +1,4 @@
-execute if score #check_times leMinions.temp matches 25.. run return run function le_minions:minions/minion/work/finish
+execute if score #check_times leMinions.temp matches 25.. run return run function le_minions:minions/minion/work/break/__1__
 
 function le_minions:minions/minion/work/get_coords
 

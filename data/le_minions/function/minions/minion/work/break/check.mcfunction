@@ -1,4 +1,4 @@
-#$particle cloud ~$(x) ~ ~$(z)
+#$particle cloud ~$(x) ~1 ~$(z)
 
 $execute if block ~$(x) ~$(y) ~$(z) $(block) run return 1
 
