@@ -1,0 +1,3 @@
+$data modify entity @e[tag=leMinions.minion_as,tag=leMinions.new_minion,limit=1,type=armor_stand] ArmorItems set value [{id: "minecraft:leather_boots", components: {"minecraft:dyed_color":{rgb:$(color),show_in_tooltip:false}}},{id: "minecraft:leather_leggings", components: {"minecraft:dyed_color":{rgb:$(color),show_in_tooltip:false}}},{id: "minecraft:leather_chestplate", components: {"minecraft:dyed_color":{rgb:$(color),show_in_tooltip:false}}},{id:"minecraft:player_head", Count:1b, components: {"minecraft:profile":$(profile)}}]
+
+$data modify entity @e[tag=leMinions.minion_as,tag=leMinions.new_minion,limit=1,type=armor_stand] HandItems set value [{id:"$(pickaxe)", count: 1b}, {}]

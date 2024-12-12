@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "minion.redstone",
+    "category": "redstone",
+    "pattern": [
+        "bob",
+        "opo",
+        "bob"
+    ],
+    "key": {
+        "b": [
+            "minecraft:redstone_block"
+        ],
+        "o": [
+            "minecraft:redstone_ore",
+            "minecraft:deepslate_redstone_ore"
+        ],
+        "p": [
+            "minecraft:iron_pickaxe"
+        ]
+    },
+    "result": {
+        "id": "minecraft:spider_spawn_egg",
+        "components": {
+            "minecraft:entity_data": {
+                "id": "minecraft:marker",
+                "Tags": [
+                    "leMinions.minion_setup",
+                    "new"
+                ],
+                "data": {
+                    "spawn_egg": "minecraft:spider_spawn_egg",
+                    "type": "1",
+                    "material": "redstone",
+                    "time_action": "1800"
+                }
+            },
+            "minecraft:item_name": "\"§aRedstone Minion\"",
+            "minecraft:lore": [
+                '"§7Place this minion on top of a "',
+                '"§7barrel and it will start generating "',
+                '"§7and collecting the desired material! "',
+                '"§7Check out the head on the barrel"',
+                '"§7to learn more about the area."',
+                '" "',
+                '"§9§lLEMINIONS"'
+            ]
+        },
+        "count": 1
+    },
+    "show_notification": true
+}

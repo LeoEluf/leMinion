@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "minion.coal",
+    "category": "redstone",
+    "pattern": [
+        "bob",
+        "opo",
+        "bob"
+    ],
+    "key": {
+        "b": [
+            "minecraft:obsidian"
+        ],
+        "o": [
+            "minecraft:crying_obsidian"
+        ],
+        "p": [
+            "minecraft:diamond_pickaxe"
+        ]
+    },
+    "result": {
+        "id": "minecraft:enderman_spawn_egg",
+        "components": {
+            "minecraft:entity_data": {
+                "id": "minecraft:marker",
+                "Tags": [
+                    "leMinions.minion_setup",
+                    "new"
+                ],
+                "data": {
+                    "spawn_egg": "minecraft:enderman_spawn_egg",
+                    "type": "1",
+                    "material": "obsidian",
+                    "time_action": "600"
+                }
+            },
+            "minecraft:item_name": "\"§aObsidian Minion\"",
+            "minecraft:lore": [
+                '"§7Place this minion on top of a "',
+                '"§7barrel and it will start generating "',
+                '"§7and collecting the desired material! "',
+                '"§7Check out the head on the barrel"',
+                '"§7to learn more about the area."',
+                '" "',
+                '"§9§lLEMINIONS"'
+            ]
+        },
+        "count": 1
+    },
+    "show_notification": true
+}
