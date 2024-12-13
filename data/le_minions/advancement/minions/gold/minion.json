@@ -20,12 +20,12 @@
             },
             "count": 1
         },
-        "title": "Gold Minion",
-        "description": "Craft your minion",
+        "title": "First Gold Minion",
+        "description": "Craft your first gold minion",
         "background": "",
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": false
+        "announce_to_chat": true
     },
     "parent": "le_minions:minions/gold/start",
     "criteria": {

@@ -19,5 +19,6 @@ execute if data storage le_minions:ui in[0] unless data storage le_minions:ui in
 
 #refresh
 function le_minions:minions/ui/refresh
+tag @a remove this_player
 
 #data modify entity @s data.leMinions.ui.previous set from block ~ ~-1 ~ Items

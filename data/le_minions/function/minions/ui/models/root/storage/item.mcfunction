@@ -1,0 +1,1 @@
+$data modify storage le_minions:ui mask prepend value {Slot:$(slot)b, id: "$(id)", components: {"custom_data": {leMinions:{cmd: "function le_minions:minions/ui/action/upgrades/storage/remove/start {slot: \"$(slot)\"}"}}, "minecraft:item_name":'"§aStorage§r"', lore: ['"§7Type: §b$(name) §r"','"§7Storage: §b+$(storage) §r"','""','"§e| Click to remove §r"']}}

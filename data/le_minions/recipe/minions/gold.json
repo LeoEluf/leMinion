@@ -32,7 +32,7 @@
                     "spawn_egg": "minecraft:blaze_spawn_egg",
                     "type": "1",
                     "material": "gold",
-                    "time_action": "3000"
+                    "time_action": "2400"
                 }
             },
             "minecraft:item_name": "\"§aGold Minion\"",
@@ -40,8 +40,8 @@
                 '"§7Place this minion on top of a "',
                 '"§7barrel and it will start generating "',
                 '"§7and collecting the desired material! "',
-                '"§7Check out the head on the barrel"',
-                '"§7to learn more about the area."',
+                '"§7Check out its head on the barrel"',
+                '"§7to learn more about it."',
                 '" "',
                 '"§9§lLEMINIONS"'
             ]

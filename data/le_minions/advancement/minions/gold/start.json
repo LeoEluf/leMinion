@@ -3,8 +3,8 @@
         "icon": {
             "id": "minecraft:blaze_spawn_egg"
         },
-        "title": "Starting Gold Minion",
-        "description": "Collect §b4x gold ores§a, §b4x gold blocks§a and §b1x wooden pickaxe§a",
+        "title": "Gold Minion",
+        "description": "Collect §b4x gold ores§a, §b4x gold blocks§a and §b1x golden pickaxe§a",
         "background": "",
         "frame": "task",
         "show_toast": false,
@@ -12,7 +12,7 @@
     },
     "parent": "le_minions:minions/root",
     "criteria": {
-        "ore": {
+        "item1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
@@ -23,7 +23,7 @@
                 ]
             }
         },
-        "block": {
+        "item2": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
@@ -34,12 +34,12 @@
                 ]
             }
         },
-        "pickaxe": {
+        "tool": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "items": "minecraft:wooden_pickaxe",
+                        "items": "minecraft:golden_pickaxe",
                         "count": 1
                     }
                 ]
@@ -48,13 +48,13 @@
     },
     "requirements": [
         [
-            "ore"
+            "item1"
         ],
         [
-            "block"
+            "item2"
         ],
         [
-            "pickaxe"
+            "tool"
         ]
     ],
     "rewards": {

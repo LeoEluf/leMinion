@@ -1,0 +1,1 @@
+$give @p[tag=this_player] $(item) $(count)

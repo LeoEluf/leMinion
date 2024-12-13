@@ -37,13 +37,13 @@
             },
             "minecraft:item_name": "\"§aCoal Minion\"",
             "minecraft:lore": [
-                '"§7Place this minion on top of a "',
-                '"§7barrel and it will start generating "',
-                '"§7and collecting the desired material! "',
-                '"§7Check out the head on the barrel"',
-                '"§7to learn more about the area."',
-                '" "',
-                '"§9§lLEMINIONS"'
+                "\"§7Place this minion on top of a \"",
+                "\"§7barrel and it will start generating \"",
+                "\"§7and collecting the desired material! \"",
+                "\"§7Check out its head on the barrel\"",
+                "\"§7to learn more about it.\"",
+                "\" \"",
+                "\"§9§lLEMINIONS\""
             ]
         },
         "count": 1

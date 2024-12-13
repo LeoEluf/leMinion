@@ -3,7 +3,7 @@ execute store result score #items leMinions.temp run data get entity @s data.leM
 
 #if there is no item, return
 execute unless score #items leMinions.temp matches 1.. run tellraw @p[tag=this_player] "§cThis minion does not have any item stored!"
-execute unless score #items leMinions.temp matches 1.. as @p[tag=this_player] at @s run return run playsound entity.villager.no master @s ~ ~ ~ 100 2 1
+execute unless score #items leMinions.temp matches 1.. as @p[tag=this_player] at @s run return run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1
 
 #sound
 execute as @p[tag=this_player] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 100 1.5 1

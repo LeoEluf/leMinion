@@ -32,7 +32,7 @@
                     "spawn_egg": "minecraft:elder_guardian_spawn_egg",
                     "type": "1",
                     "material": "iron",
-                    "time_action": "1800"
+                    "time_action": "1200"
                 }
             },
             "minecraft:item_name": "\"§aIron Minion\"",
@@ -40,8 +40,8 @@
                 '"§7Place this minion on top of a "',
                 '"§7barrel and it will start generating "',
                 '"§7and collecting the desired material! "',
-                '"§7Check out the head on the barrel"',
-                '"§7to learn more about the area."',
+                '"§7Check out its head on the barrel"',
+                '"§7to learn more about it."',
                 '" "',
                 '"§9§lLEMINIONS"'
             ]

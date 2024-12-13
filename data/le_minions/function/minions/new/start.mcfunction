@@ -1,6 +1,7 @@
 execute align xyz run tp @s ~.5 ~-.5 ~.5
 
 #unable
+execute unless block ~ ~ ~ air run return run function le_minions:minions/new/unable
 execute unless block ~ ~-1 ~ barrel run return run function le_minions:minions/new/unable
 execute if entity @e[tag=leMinions.minion,distance=..2] run return run function le_minions:minions/new/unable
 
@@ -12,7 +13,7 @@ summon text_display ~ ~1.3 ~ {Tags:["leMinions.minion_display","leMinions.new_mi
 
 summon armor_stand ~ ~ ~ {Tags:["leMinions.minion_as","leMinions.new_minion"],Small:true,Invulnerable:true,NoBasePlate:true,ShowArms:true,DisabledSlots:4144959, ArmorItems:[{id: "minecraft:leather_boots"},{id: "minecraft:leather_leggings"},{id: "minecraft:leather_chestplate"},{id:"minecraft:player_head", Count:1b}],HandItems: [{id: "minecraft:wooden_pickaxe"}, {}], Pose:{Head:[0f,0f,0f],LeftArm:[0f,0f,345f],RightArm:[0f,0f,15f]}}
 
-summon marker ~ ~ ~ {Tags:["leMinions.minion","leMinions.working","leMinions.new_minion", "leMinions.minion_setup"],data:{leMinions:{item_count:0, max_item_count: 64}}}
+summon marker ~ ~ ~ {Tags:["leMinions.minion","leMinions.working","leMinions.new_minion", "leMinions.minion_setup"],data:{leMinions:{item_count:0, max_storage: 64, efficiency: 0}}}
 
 #setup
 scoreboard players add .global leMinions.id 1
@@ -27,9 +28,11 @@ data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinio
 execute if data entity @s data{type:"1"} run data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.pos.y set value -1
 
 $data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.stats set from storage le_minions:stats $(type).$(material)
+$data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.stats.layout set from storage le_minions:stats $(type).layout
 
 $scoreboard players set @e[tag=leMinions.new_minion,limit=1,type=marker] leMinions.time_action $(time_action)
 $data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.time_action set value $(time_action)
+$data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.stats.time_action set value $(time_action)
 
 scoreboard players set @e[tag=leMinions.new_minion,limit=1,sort=nearest,type=marker] leMinions.timer 100
 
