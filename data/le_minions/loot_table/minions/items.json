@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "#items"
+                },
+                "score": "leMinions.temp"
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:structure_void"
+                }
+            ]
+        }
+    ]
+}

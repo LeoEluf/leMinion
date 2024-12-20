@@ -9,7 +9,7 @@ data modify storage le_minions:stats item.lore set value ["\"§7Place this minio
 
 data modify storage le_minions:stats upgrades.storage set value {"minecraft:hopper": {storage: 128, name: "Hopper"}, "minecraft:chest": {storage: 192, name: "Chest"}, "minecraft:barrel": {storage: 256, name: "Barrel"}, "minecraft:trapped_chest": {storage: 320, name: "Trapped Chest"}, "minecraft:ender_chest": {storage: 384, name: "Ender Chest"}, "minecraft:shulker_box": {storage: 448, name: "Shulker Box"}}
 
-data modify storage le_minions:stats upgrades.fuel set value {"minecraft:charcoal": {efficiency: 2, name: "Charcoal", rarity: "Common"}, "minecraft:coal": {efficiency: 4, name: "Coal", rarity: "Uncommon"},"minecraft:coal_block": {efficiency: 6, name: "Block of Coal", rarity: "Rare"},"minecraft:heart_of_the_sea": {efficiency: 8, name: "Heart of the Sea", rarity: "Epic"},"minecraft:nether_star": {efficiency: 10, name: "Nether Star", rarity: "Legendary"},"minecraft:dragon_egg": {efficiency: 50, name: "Dragon Egg", rarity: "Mythic"}}
+data modify storage le_minions:stats upgrades.fuel set value {"minecraft:charcoal": {efficiency: 2, name: "Charcoal", rarity: "Common"}, "minecraft:coal": {efficiency: 4, name: "Coal", rarity: "Uncommon"},"minecraft:coal_block": {efficiency: 6, name: "Block of Coal", rarity: "Rare"},"minecraft:heart_of_the_sea": {efficiency: 8, name: "Heart of the Sea", rarity: "Epic"},"minecraft:nether_star": {efficiency: 10, name: "Nether Star", rarity: "Legendary"},"minecraft:dragon_egg": {efficiency: 40, name: "Dragon Egg", rarity: "Mythic"}}
 
 data modify storage le_minions:stats 1.layout set value "'\" §b■ ■ ■ ■ ■§r\"', '\" §b■ ■ ■ ■ ■§r    §b■ >> Air \"', '\" §b■ ■ §eM §b■ ■§r\"', '\" §b■ ■ ■ ■ ■§r    §eM >> Minion\"', '\" §b■ ■ ■ ■ ■§r\"'"
 
@@ -46,5 +46,10 @@ scoreboard players set #20 leMinions.temp 20
 scoreboard players set #10 leMinions.temp 10
 scoreboard players set #-1 leMinions.temp -1
 
-tellraw @a ["§c§lLEMINIONS §9§l>>§r §aCurrently running on version §e0.1.0§a!"]
-# tellraw @a ["§c§lLEMINIONS §9§l>>§r §aUpdating all minions to current version..."]
+
+tellraw @a ["§c§lLEMINIONS §9§l>>§r §aCurrently running on version §b1.1§a!"]
+tellraw @a ["§c§lLEMINIONS §9§l>>§r §aAccess ", {"text":"§b§nplanetminecraft.com/member/leoeluf","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/leoeluf"},"hoverEvent":{"action":"show_text","contents":["§eClick to open"]}}, " §ato know more about my projects!"]
+
+#update
+execute as @e[tag=leMinions.minion,type=marker] unless data entity @s data.leMinions{dp_version: 1.1} run function le_minions:minions/update/get_version {version: "1.1"}
+tellraw @a ["§c§lLEMINIONS §9§l>>§r §aUpdated all minions to current version..."]

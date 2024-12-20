@@ -4,13 +4,8 @@ $execute unless data storage le_minions:stats upgrades.fuel."$(id)" as @p[tag=th
 #sound
 execute as @p[tag=this_player] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
 
-#get efficiency and add data
-execute store result score #efficiency leMinions.temp run data get entity @s data.leMinions.efficiency
-$execute store result score #upgrade leMinions.temp run data get storage le_minions:stats upgrades.fuel."$(id)".efficiency
-scoreboard players operation #efficiency leMinions.temp += #upgrade leMinions.temp
-execute store result entity @s data.leMinions.efficiency int 1 run scoreboard players get #efficiency leMinions.temp
-
-#update time action
+#update efficiency and time action
+$function le_minions:minions/ui/action/upgrades/fuel/update_efficiency {path: "storage le_minions:stats upgrades.fuel.\"$(id)\".efficiency", op: "+"}
 function le_minions:minions/ui/action/upgrades/fuel/update_time_action
 
 #update ui

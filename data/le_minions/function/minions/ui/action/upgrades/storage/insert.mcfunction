@@ -14,5 +14,8 @@ execute store result entity @s data.leMinions.max_storage int 1 run scoreboard p
 $data modify entity @s data.leMinions.ui.upgrades.$(slot) set value {id: "$(id)", slot: $(slot)}
 $data modify entity @s data.leMinions.ui.upgrades.$(slot) merge from storage le_minions:stats upgrades.storage."$(id)"
 
+#case shulker box
+$execute if items block ~ ~ ~ container.$(slot) #minecraft:shulker_boxes run data modify entity @s data.leMinions.ui.upgrades.$(slot) merge from storage le_minions:stats upgrades.storage."$(id)"
+
 #update count and adjust return
 $function le_minions:minions/ui/action/upgrades/update_return_item {slot: "$(slot)", count: "$(count)"}
