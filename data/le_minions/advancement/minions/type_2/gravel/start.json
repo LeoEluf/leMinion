@@ -1,0 +1,65 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:silverfish_spawn_egg"
+        },
+        "title": "Gravel Minion",
+        "description": "Collect §b4x gravel§a, §b4x flint§a and §b1x wooden shovel§a",
+        "background": "",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "le_minions:minions/shovel",
+    "criteria": {
+        "item1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:gravel",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        "item2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:flint",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        "tool": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:wooden_shovel",
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "item1"
+        ],
+        [
+            "item2"
+        ],
+        [
+            "tool"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "le_minions:minions/type_2/gravel"
+        ]
+    }
+}

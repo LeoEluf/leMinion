@@ -1,0 +1,44 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                    "id": [
+                        1328965504,
+                        1406354286,
+                        -1266257353,
+                        492851516
+                    ],
+                    "properties": [
+                        {
+                            "name": "textures",
+                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU3MDVjZjg2NGRmMmMxODJlMzJjNDg2YjcxNDdjYmY3ODJhMGFhM2RmOGE2ZDYxNDUzOTM5MGJmODRmYjE1ZCJ9fX0="
+                        }
+                    ]
+                }
+            },
+            "count": 1
+        },
+        "title": "First Coal Minion",
+        "description": "Craft your first coal minion",
+        "background": "",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "le_minions:minions/type_1/coal/start",
+    "criteria": {
+        "craft_minion": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "le_minions:minions/type_1/coal"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_minion"
+        ]
+    ]
+}

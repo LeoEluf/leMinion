@@ -22,7 +22,6 @@ execute if data entity @s data.leMinions.ui.upgrades.13 run function le_minions:
 execute if data entity @s data.leMinions.ui.upgrades.14 run function le_minions:minions/ui/action/remove/drop_upgrade with entity @s data.leMinions.ui.upgrades.14
 
 #items
-function le_minions:minions/get_stats
 execute if score #items leMinions.temp matches 1.. run loot insert ~ ~ ~ loot le_minions:minions/items
 execute if score #items leMinions.temp matches 1.. run data modify block ~ ~ ~ Items[{id: "minecraft:structure_void"}].id set from entity @s data.leMinions.stats.item
 

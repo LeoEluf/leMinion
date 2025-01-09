@@ -5,7 +5,7 @@ $setblock ~$(x) ~$(y) ~$(z) air
 
 #update item count
 execute store result score #items leMinions.temp run data get entity @s data.leMinions.item_count
-scoreboard players add #items leMinions.temp 1
+$scoreboard players add #items leMinions.temp $(count)
 execute store result entity @s data.leMinions.item_count int 1 run scoreboard players get #items leMinions.temp
 
 #refresh ui

@@ -26,7 +26,9 @@ execute as @e[tag=leMinions.new_minion,limit=1,sort=nearest,type=marker] run fun
 data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions merge from entity @s data
 
 execute if data entity @s data{type:"1"} run data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.pos.y set value -1
+execute if data entity @s data{type:"2"} run data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.pos.y set value -1
 
+data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.dp_version set from storage le_minions:stats dp_version.version
 $data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.stats set from storage le_minions:stats $(type).$(material)
 $data modify entity @e[tag=leMinions.new_minion,limit=1,type=marker] data.leMinions.stats.layout set from storage le_minions:stats $(type).layout
 

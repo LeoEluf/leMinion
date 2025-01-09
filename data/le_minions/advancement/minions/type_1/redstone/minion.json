@@ -1,0 +1,44 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                    "id": [
+                        -845319261,
+                        954747923,
+                        -1904260718,
+                        -1925790408
+                    ],
+                    "properties": [
+                        {
+                            "name": "textures",
+                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWUyMWY4Y2ZlOGNjMGUwODk5MGQ1MjE2NWU3OGU2ZjgxNmY0ZjhlMWNlN2NiMGYwYTZjOGViZTFkYTg1ZTQyYSJ9fX0="
+                        }
+                    ]
+                }
+            },
+            "count": 1
+        },
+        "title": "First Redstone Minion",
+        "description": "Craft your first redstone minion",
+        "background": "",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "le_minions:minions/type_1/redstone/start",
+    "criteria": {
+        "craft_minion": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "le_minions:minions/type_1/redstone"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_minion"
+        ]
+    ]
+}

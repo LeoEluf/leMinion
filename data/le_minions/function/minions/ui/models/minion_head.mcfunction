@@ -1,5 +1,5 @@
 #create item
-$data merge storage le_minions:ui {head_item:{id: "minecraft:player_head", Count: 1b, components: {"minecraft:custom_data": {leMinions: {empty:4b}}, "lore":['"§7To activate your minion, §r"','"§7place it as follows: §r"', $(layout), '""','"§7Time For Action: §b$(time_action_txt)s §r"', '"§7Max Storage: §b$(max_storage)§b/960 §r"']}}}
+$data merge storage le_minions:ui {head_item:{id: "minecraft:player_head", Count: 1b, components: {"minecraft:custom_data": {leMinions: {empty:4b}}, "lore":[$(layout), '""','"§7Time For Action: §b$(time_action_txt)s §r"', '"§7Max Storage: §b$(max_storage)§b/960 §r"']}}}
 data modify storage le_minions:ui head_item.components.profile set from entity @s data.leMinions.stats.profile
 $data modify storage le_minions:ui head_item.components.item_name set value '"§b$(name) Minion§r"'
 

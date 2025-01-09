@@ -1,0 +1,65 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:camel_spawn_egg"
+        },
+        "title": "Sand Minion",
+        "description": "Collect §b4x sand§a, §b4x sandstone§a and §b1x wooden shovel§a",
+        "background": "",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "le_minions:minions/shovel",
+    "criteria": {
+        "item1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:sand",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        "item2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:sandstone",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        "tool": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:wooden_shovel",
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "item1"
+        ],
+        [
+            "item2"
+        ],
+        [
+            "tool"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "le_minions:minions/type_2/sand"
+        ]
+    }
+}

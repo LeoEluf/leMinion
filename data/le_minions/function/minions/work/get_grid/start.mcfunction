@@ -1,4 +1,4 @@
-#define storage get_grid
+#set storage get_grid
 data modify storage le_minions:stats get_grid set value {row: -2, col: -2, grid: []}
 data modify storage le_minions:stats get_grid.y set from entity @s data.leMinions.pos.y
 data modify storage le_minions:stats get_grid.block set from entity @s data.leMinions.stats.block

@@ -1,5 +1,5 @@
 #verify this block if not 0 0
-execute unless data storage le_minions:stats get_grid{row: 0, col: 0} run function le_minions:minions/work/get_grid/check_block with storage le_minions:stats get_grid
+execute unless data storage le_minions:stats get_grid{row: 0, col: 0} run function le_minions:minions/work/get_grid/check_block/start with storage le_minions:stats get_grid
 
 #if col >= 5, change row
 execute unless score #row leMinions.temp matches 2.. if score #col leMinions.temp matches 2.. run function le_minions:minions/work/get_grid/change_row

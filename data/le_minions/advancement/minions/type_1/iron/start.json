@@ -1,0 +1,65 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:elder_guardian_spawn_egg"
+        },
+        "title": "Iron Minion",
+        "description": "Collect §b4x iron ores§a, §b4x iron blocks§a and §b1x iron pickaxe§a",
+        "background": "",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "le_minions:minions/pickaxe",
+    "criteria": {
+        "item1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:iron_ores",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        "item2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:iron_block",
+                        "count": 4
+                    }
+                ]
+            }
+        },
+        "tool": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:iron_pickaxe",
+                        "count": 1
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "item1"
+        ],
+        [
+            "item2"
+        ],
+        [
+            "tool"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "le_minions:minions/type_1/iron"
+        ]
+    }
+}
