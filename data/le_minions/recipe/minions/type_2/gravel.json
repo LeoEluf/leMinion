@@ -34,15 +34,15 @@
                     "time_action": "200"
                 }
             },
-            "minecraft:item_name": "\"§aGravel Minion\"",
+            "minecraft:item_name": "§aGravel Minion",
             "minecraft:lore": [
-                "\"§7Place this minion on top of a \"",
-                "\"§7barrel and it will start generating \"",
-                "\"§7and collecting the desired material! \"",
-                "\"§7Check out its head on the barrel\"",
-                "\"§7to learn more about it.\"",
-                "\" \"",
-                "\"§9§lLEMINIONS\""
+                "§7Place this minion on top of a",
+                "§7barrel and it will start generating",
+                "§7and collecting the desired material!",
+                "§7Check out its head on the barrel",
+                "§7to learn more about it.",
+                "",
+                "§9§lLEMINIONS"
             ]
         },
         "count": 1
