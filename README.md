@@ -5,6 +5,13 @@ Inspired by the minions from Hypixel SkyBlock, this Minecraft **datapack** adds 
 
 ---
 
+## 📺 See It in Action
+
+Watch this quick showcase to learn how to use LeMinions:  
+👉 [YouTube Video – LeMinions v1.3 Demo](https://youtu.be/j01QNZviIbw)
+
+---
+
 ## 📦 How to Install (Super Easy!)
 
 1. **Download the Datapack**  
@@ -96,6 +103,18 @@ Progress through a fun series of **custom advancements** that help you explore a
 
 Feel free to open an issue on GitHub or leave a comment on Planet Minecraft!  
 We love hearing from fellow crafters 🧡
+
+---
+
+## 📜 License
+
+This datapack is released under the **MIT License**.  
+You’re free to:
+- ✅ Use it in your worlds
+- 🛠 Modify it to suit your needs
+- 📢 Share it with credit to the original creator
+
+Just don’t sell it or claim it as your own.
 
 ---
 
