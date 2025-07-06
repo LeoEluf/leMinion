@@ -1,4 +1,4 @@
-# 🌟 LeMinions v1.3 - For Minecraft 1.21.4 🌟
+# 🌟 LeMinions v1.4 - For Minecraft 1.21.7 🌟
 
 🎉 **Welcome to LeMinions!**  
 Inspired by the minions from Hypixel SkyBlock, this Minecraft **datapack** adds friendly little helpers to your world that mine and collect resources for you — all with some fun twists and upgrades!
@@ -8,7 +8,7 @@ Inspired by the minions from Hypixel SkyBlock, this Minecraft **datapack** adds 
 ## 📺 See It in Action
 
 Watch this quick showcase to learn how to use LeMinions:  
-👉 [YouTube Video – LeMinions v1.3 Demo](https://youtu.be/j01QNZviIbw)
+👉 [YouTube Video – LeMinions Demo](https://youtu.be/j01QNZviIbw)
 
 ---
 
@@ -42,7 +42,7 @@ LeMinions are customizable auto-miners that work *for you*! They’re easy to cr
 ## 🛠️ Included Minions
 
 - ⛏ Cobblestone, Coal, Copper, Diamond, Emerald, Gold  
-- ⚒ Iron, Lapis, Redstone, Quartz, Obsidian, Glowstone  
+- ⚒ Iron, Lapis, Redstone, Quartz, Obsidian, Glowstone, Netherite  
 - 🪨 End Stone, Sand, Soul Sand, Gravel, Basalt, Blackstone  
 - 🧱 Red Sand, Netherrack, Clay
 
@@ -58,7 +58,7 @@ LeMinions are customizable auto-miners that work *for you*! They’re easy to cr
 ## ⚙️ Configuration
 
 Use the command below to open the config menu:  
-/trigger leMinions.config
+`/trigger leMinions.config`
 
 
 ---
