@@ -1,7 +1,6 @@
 {
     "pack": {
-        "pack_format": 18,
-        "supported_formats": [15, 41],
+        "pack_format": 61,
         "description": "§eplanetminecraft.com/member/leoeluf"
     }
 }
