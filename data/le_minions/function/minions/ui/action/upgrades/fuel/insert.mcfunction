@@ -1,4 +1,4 @@
-$say $(id) $(slot) $(count)
+#$say $(id) $(slot) $(count)
 
 #check for upgrade
 $execute unless data storage le_minions:stats upgrades.fuel."$(id)" as @p[tag=this_player] at @s run return run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1 1

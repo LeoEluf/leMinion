@@ -21,6 +21,9 @@ execute in overworld if block 0 -64 0 yellow_shulker_box run setblock 0 -64 0 be
 execute if data entity @s data.leMinions{type: "1"} run data modify entity @s data.leMinions.stats.layout set value "'§7To activate your minion, §r', '§7place it as follows: §r', ' §b■ ■ ■ ■ ■§r', ' §b■ ■ ■ ■ ■§r    §b■ >> Air ', ' §b■ ■ §eM §b■ ■§r', ' §b■ ■ ■ ■ ■§r    §eM >> Minion', ' §b■ ■ ■ ■ ■§r'"
 execute if data entity @s data.leMinions{type: "2"} run data modify entity @s data.leMinions.stats.layout set value "'§7To activate your minion, §r', '§7place it as follows: §r', ' §b■ ■ ■ ■ ■§r', ' §b■ ■ ■ ■ ■§r    §b■ >> Air with solid block below ', ' §b■ ■ §eM §b■ ■§r ', ' §b■ ■ ■ ■ ■§r    §eM >> Minion', ' §b■ ■ ■ ■ ■§r'"
 
+#1.5
+function le_minions:minions/new/set_armorstand with entity @s data.leMinions.stats
+
 #refresh ui
 function le_minions:minions/ui/refresh
 
